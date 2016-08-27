@@ -6,7 +6,7 @@
 package pizzatester;
 
 /**
- *
+ * Concrete decorator class that will modify component behavior.
  * @author Brannon R. Brakefield
  */
 public class Onions extends Topping {
