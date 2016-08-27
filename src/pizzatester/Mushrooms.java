@@ -7,21 +7,25 @@ package pizzatester;
 
 /**
  *
- * @author brann
+ * @author Brannon R. Brakefield
  */
-public class Mushrooms extends Topping{
+public class Mushrooms extends Topping {
     
-    public Mushrooms(Pizza newPizza){
+    public Mushrooms(Pizza newPizza) {
         super(newPizza);
      
         System.out.println("Adding mushrooms to pizza");
     }
     
-    public String getDescription(){
+    @Override
+    public String getDescription() {
+        
         return tempPizza.getDescription() + ", Mushrooms";
     }
     
-    public double getCost(){
+    @Override
+    public double getCost() { 
+        
         return tempPizza.getCost() + 1.00;
     }
 }

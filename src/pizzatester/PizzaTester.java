@@ -6,15 +6,18 @@
 package pizzatester;
 
 /**
- *
- * @author brann
+ * Test class that will create the instances of Pizza, calculate the cost 
+ * of said pizzas, and prints their description.
+ * @author Brannon R. Brakefield
  */
 public class PizzaTester {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments which will remain unused in this
+     * program. 
      */
     public static void main(String[] args) {
+        
         Pizza pizza1 = new Mushrooms(new Cheese(new Thick()));
         System.out.println();
         

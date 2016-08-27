@@ -6,17 +6,20 @@
 package pizzatester;
 
 /**
- * Concrete class 
+ * Model for the concrete thick and thin crust components.
  * @author Brannon R. Brakefield
  */
 public class Base implements Pizza {
     
-    
-    public String getDescription(){
+    @Override
+    public String getDescription() {
+        
         return "Ambigous Pizza Crust";
-    }
+    }  
     
-    public double getCost(){
-     return 0.00;
+    @Override
+    public double getCost() {
+        
+        return 0.00;
     }
 }

@@ -6,7 +6,8 @@
 package pizzatester;
 
 /**
- * Interface for classes that will be decorated with toppings.
+ * Component interface that defines functionality for classes that 
+ * implement Pizza.
  * @author Brannon R. Brakefield
  */
 public interface Pizza {

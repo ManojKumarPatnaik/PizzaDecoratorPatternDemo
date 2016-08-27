@@ -7,21 +7,25 @@ package pizzatester;
 
 /**
  *
- * @author brann
+ * @author Brannon R. Brakefield
  */
-public class Olives extends Topping{
+public class Olives extends Topping {
     
-    public Olives(Pizza newPizza){
+    public Olives(Pizza newPizza) {
         super(newPizza);
         
         System.out.println("Adding olives to pizza");
     }
     
-    public String getDescription(){
+    @Override
+    public String getDescription() {
+        
         return tempPizza.getDescription() + ", Olives";
     }
     
-    public double getCost(){
+    @Override
+    public double getCost() {
+        
         return tempPizza.getCost() + .75;
     }
 }

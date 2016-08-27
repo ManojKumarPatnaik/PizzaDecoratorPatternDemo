@@ -6,22 +6,26 @@
 package pizzatester;
 
 /**
- *
- * @author brann
+ * Concrete decorator class that will modify component behavior.
+ * @author Brannon R. Brakefield
  */
-public class Pepperoni extends Topping{
+public class Pepperoni extends Topping {
     
-    public Pepperoni(Pizza newPizza){
+    public Pepperoni(Pizza newPizza) {
         super(newPizza);
         
         System.out.println("Adding pepperoni to pizza");
     }
     
-    public String getDescription(){
+    @Override
+    public String getDescription() {
+        
         return tempPizza.getDescription() + ", Pepperoni";
     }
     
-    public double getCost(){
+    @Override
+    public double getCost() {
+        
         return tempPizza.getCost() + .50;
     }
 }

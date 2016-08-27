@@ -6,18 +6,21 @@
 package pizzatester;
 
 /**
- *
- * @author brann
+ * Concrete thin crust class that is an extension of the simple base class
+ * and shall become decorated by the subclasses of Topping.
+ * @author Brannon R. Brakefield
  */
 public class Thin extends Base {
     
     @Override
-     public String getDescription(){
+     public String getDescription() {
+         
         return "Thin crust w/ Sweet Sauce";
     }
     
     @Override
-     public double getCost(){
+     public double getCost() {
+         
          return 2.50;
     }
 }

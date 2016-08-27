@@ -6,24 +6,27 @@
 package pizzatester;
 
 /**
- *
+ * Abstract decorator class that implements the Pizza component interface. 
  * @author Brannon R. Brakefield
  */
 public abstract class Topping implements Pizza {
     
     protected Pizza tempPizza;
     
-    public Topping(Pizza newPizza){
-        
-        tempPizza = newPizza;
+    public Topping(Pizza newPizza) {
+       
+        this.tempPizza = newPizza;
     }
     
-    public String getDescription(){
+    @Override
+    public String getDescription() {
         
         return tempPizza.getDescription();
     }
     
-    public double getCost(){
+    
+    @Override
+    public double getCost() {
         
         return tempPizza.getCost();
     }

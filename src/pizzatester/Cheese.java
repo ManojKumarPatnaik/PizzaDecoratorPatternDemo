@@ -6,10 +6,10 @@
 package pizzatester;
 
 /**
- *
- * @author brann
+ * Concrete decorator class that will modify component behavior.
+ * @author Brannon R. Brakefield
  */
-public class Cheese extends Topping{
+public class Cheese extends Topping {
     
     public Cheese(Pizza newPizza){
         super(newPizza);
@@ -17,12 +17,14 @@ public class Cheese extends Topping{
         System.out.println("Adding cheese to pizza");
     }
     
-     public String getDescription(){
-        
+    @Override
+     public String getDescription() {
+         
         return tempPizza.getDescription()+ ", Cheese";
     }
     
-    public double getCost(){
+    @Override
+    public double getCost() {
         
         return tempPizza.getCost()+ 1.00;
     }
